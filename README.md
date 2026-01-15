@@ -7,7 +7,7 @@ Este projeto foi desenvolvido de forma **voluntária**, com o objetivo de apoiar
 ---
 
 ## 🔗 Preview
-> (link do Netlify será adicionado após o deploy)
+https://pururucas-sabores-do-vale.netlify.app/
 
 ---
 

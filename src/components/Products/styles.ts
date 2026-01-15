@@ -14,14 +14,22 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  fonts-size: 2.5rem;
+  font-size: 2.5rem;
   color: #633a1f;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Subtitle = styled.p`
+  font-size: 1.15rem;
   color: #995a31;
-  margin-bottom: 3rem;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto 3rem;
 `;
 
 export const ProductsGrid = styled.div`
@@ -49,4 +57,39 @@ export const ProductText = styled.p`
   color: #995a31;
   line-height: 1.6;
   margin-bottom: 1rem;
+`;
+
+export const Gallery = styled.div`
+margin-top: 4rem;
+display: flex;
+gap: 1.5rem;
+overflow-x: auto;
+padding:-bottom: 1rem;
+
+scroll-snap-type: x mandatory;
+
+&::-webkit-scrollbar {
+display: none;
+}
+
+@media (min-width: 1024px) {
+justify-content: center;
+overflow-x: visible;
+flex-wrap: wrap;
+}
+`;
+
+export const GalleryImage = styled.img`
+  flex: 0 0 auto;
+  width: 280px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 16px;
+  scroll-snap-align: center;
+  box--shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  @media (min-width: 768px) {
+    width: 300px;
+    height: 400px;
+  }
 `;

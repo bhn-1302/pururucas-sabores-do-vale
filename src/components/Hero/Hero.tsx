@@ -1,5 +1,5 @@
-import logo from "../../assets/images/logo.png";
-import mascote from "../../assets/images/mascote.png";
+import logo from "../../assets/images/logo-fundo-removido.png";
+import mascote from "../../assets/images/macote-fundo-removido.png";
 
 import {
   HeroSection,

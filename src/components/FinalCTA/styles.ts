@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaInstagram } from "react-icons/fa";
 
 export const Section = styled.section`
   background: #ffffff;
@@ -15,9 +16,10 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   color: #633a1f;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
 
   @media (max-width: 768px) {
     font-size: 2rem;
@@ -51,34 +53,77 @@ export const Button = styled.a`
 export const ButtonWrapper = styled.div`
   position: relative;
   display: inline-block;
+  padding-bottom: 3rem;
 `;
 export const Mascot = styled.div`
   position: absolute;
   right: -120px;
   bottom: -95px;
+  pointer-events: none;
 
   img {
-    width: 110px;
+    width: 120px;
     transform: rotate(-6deg);
   }
 
   @media (max-width: 768px) {
     position: static;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 
     img {
-      width: 80px;
+      width: 90px;
       transform: none;
     }
   }
 
   @media (max-width: 480px) {
-    position: absolute;
-    right: -10px;
-    bottom: -45px;
+    position: relative;
+    margin-top: 2.5rem;
+    left: 40px;
 
     img {
-      width: 95px;
+      width: 110px;
     }
   }
+`;
+
+export const InstagramBox = styled.div`
+  margin-top: 5rem;
+  text-align: center;
+
+  @media (max-width: 480px) {
+  margin-top: 3rem;
+  }
+`;
+
+export const InstagramText = styled.p`
+  font-size: 1.05rem;
+  color: #995a31;
+  margin-bottom: 0.6rem;
+`;
+
+export const InstagramLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #633a1f;
+  text-decoration: none;
+  border-bottom: 2px solid #e8ac41;
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const InstagramIcon = styled(FaInstagram)`
+  font-size: 1.2rem;
 `;

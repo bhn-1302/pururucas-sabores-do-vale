@@ -1,3 +1,9 @@
+import pururucaUm from "../../assets/images/pururuca-um.jpeg";
+import pururucaDois from "../../assets/images/pururuca-dois.jpeg";
+import pururucaTres from "../../assets/images/pururuca-tres.jpeg";
+import pururucaQuatro from "../../assets/images/pururuca-quatro.jpeg";
+import pururucaCinco from "../../assets/images/pururuca-cinco.jpeg";
+
 import {
   Section,
   Container,
@@ -7,6 +13,8 @@ import {
   ProductCard,
   ProductTitle,
   ProductText,
+  Gallery,
+  GalleryImage,
 } from "./styles";
 
 export const Products = () => {
@@ -35,6 +43,14 @@ export const Products = () => {
             </ProductText>
           </ProductCard>
         </ProductsGrid>
+
+        <Gallery>
+          <GalleryImage src={pururucaUm} alt="Processo de produção artesanal" />
+          <GalleryImage src={pururucaDois} alt="Pururucas em preparo" />
+          <GalleryImage src={pururucaTres} alt="Pururucas prontas" />
+          <GalleryImage src={pururucaQuatro} alt="Detalhe da crocância" />
+          <GalleryImage src={pururucaCinco} alt="Produto no ponto de venda" />
+        </Gallery>
       </Container>
     </Section>
   );

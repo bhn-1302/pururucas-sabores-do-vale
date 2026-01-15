@@ -20,11 +20,17 @@ export const Title = styled.h2`
   font-size: 2.5rem;
   color: #633a1f;
   margin-bottom: 2rem;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Text = styled.p`
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #995a31;
   line-height: 1.7;
-  margin-bottom: 1.5rem;
+  max-width: 680px;
+  margin: 0 auto 3rem;
 `;

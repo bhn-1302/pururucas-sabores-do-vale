@@ -14,9 +14,14 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #ffffff;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Cards = styled.div`
@@ -38,9 +43,13 @@ export const Card = styled.div`
 export const CardTitle = styled.h3`
   color: #e8ac41;
   margin-bottom: 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
 `;
 
 export const CardText = styled.p`
   color: #ffffff;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.65;
 `;

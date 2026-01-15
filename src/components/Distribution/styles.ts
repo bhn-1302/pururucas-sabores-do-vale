@@ -13,10 +13,15 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  text-align: center;
   font-size: 2.5rem;
   color: #633a1f;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const Cards = styled.div`
@@ -38,11 +43,14 @@ export const Card = styled.div`
 
 export const CardTitle = styled.h3`
   color: #633a1f;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #633a1f;
+  margin-bottom: 0.8rem;
 `;
 
 export const CardText = styled.p`
+  font-size: 1rem;
+  line-height: 1.65;
   color: #995a31;
-  line-height: 1.6;
 `;
